@@ -46,7 +46,7 @@ extension GraphQLResult where TypeLock: Decodable {
 // MARK: - GraphQL Error
 
 public struct GraphQLError: Codable, Equatable {
-    let message: String
+    public let message: String
     public let locations: [Location]?
 //    public let path: [String]?
 
